@@ -1,7 +1,7 @@
 import streamlit as st
 
 if 'card_counter' not in st.session_state:
-    st.session_state['card_counter'] = 0
+    st.session_state['card_counter'] = 1
 
 def format_number(number):
     # Format the number with commas every three digits

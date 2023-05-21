@@ -30,7 +30,7 @@ if 'card_counter' not in st.session_state:
 
 card_counter = st.session_state['card_counter']
 
-for i in range(card_counter):
+for i in range(card_counter,0,-1):
     if f'name{i}' not in st.session_state:
         st.session_state[f'name{i}'] = None
 
