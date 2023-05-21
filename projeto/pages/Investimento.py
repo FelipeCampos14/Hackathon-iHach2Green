@@ -1,6 +1,9 @@
 import streamlit as st 
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+st.title("Hydro Capital")
+st.header("Investimento")
 
-st.title("Marketplace")
 # Add CSS styling to the Marketplace page
 st.markdown(
     """
@@ -27,10 +30,12 @@ st.markdown(
 )
 if 'card_counter' not in st.session_state:
     st.session_state['card_counter'] = 0
+if st.session_state['card_counter'] == 0:
+    st.info("Exporte um investimento da calculadora")
 
 card_counter = st.session_state['card_counter']
 
-for i in range(card_counter,0,-1):
+for i in range(card_counter,-1,-1):
     if f'name{i}' not in st.session_state:
         st.session_state[f'name{i}'] = None
 
@@ -44,4 +49,4 @@ for i in range(card_counter,0,-1):
         st.session_state[f'profits{i}'] = None
 
     if (st.session_state[f'name{i}'] != None) and (st.session_state[f'time{i}'] != None) and (st.session_state[f'initial_investment{i}'] != None) and (st.session_state[f'profits{i}'] != None):
-        st.markdown(f"<div class='marketplace-container'> <h3>{st.session_state[f'name{i}']}</h3> <p>Anos: {st.session_state[f'time{i}']}</p> <p>Investimento inicial: R$ {st.session_state[f'initial_investment{i}']}</p> <p>Lucro: R$ {st.session_state[f'profits{i}'][-1]}</p> </div>", unsafe_allow_html=True)
+        st.markdown(f"<div class='marketplace-container'> <h3>{st.session_state[f'name{i}']}</h3> <p>Anos: {st.session_state[f'time{i}']}</p> <p>Investimento inicial: R$ {st.session_state[f'initial_investment{i}']}</p> <p>Lucro Previsto: R$ {st.session_state[f'profits{i}'][-1]}</p> </div>", unsafe_allow_html=True)
