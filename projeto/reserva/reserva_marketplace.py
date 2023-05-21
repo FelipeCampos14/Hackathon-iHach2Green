@@ -40,7 +40,8 @@ def calculate_hydrogen_production(electrolyzer_power, initial_cost_solar, annual
         'operational_cost': operational_cost,
         'profit': profit
     }
-st.title("Calculadora de Investimentos")
+st.write("This is the ROI page. Here, you can calculate the profit.")
+
 electrolyzer_power = st.number_input("Electrolyzer Power (Watts)", value=1000)
 initial_cost_solar = st.number_input("Initial Cost of Solar Plant (dollars)", value=1000000)
 annual_cost_solar = st.number_input("Annual Operational Cost of Solar Plant (dollars)", value=5000)
@@ -59,22 +60,6 @@ if st.button("Calculate"):
             electrolyzer_power, initial_cost_solar, annual_cost_solar, initial_cost_electrolyzer,
             annual_cost_electrolyzer, electrolyzer_efficiency, hydrogen_price, year
         ) for year in years]
-        annual_energy_output_formatted = [format_number(result['annual_energy_output']) for result in results]
-        annual_h2_mass_output_formatted = [format_number(result['annual_h2_mass_output']) for result in results]
-        annual_transport_cost_formatted = [format_number(result['annual_transport_cost']) for result in results]
-        initial_investment_formatted = [format_number(result['initial_investment']) for result in results]
-        revenue_formatted = [format_number(result['revenue']) for result in results]
-        operational_cost_formatted = [format_number(result['operational_cost']) for result in results]
-        profit_formatted = [format_number(result['profit']) for result in results]
-
-        st.header("Results")
-        st.write(f"Annual Energy Output (kWh): {annual_energy_output_formatted[-1]}")
-        st.write(f"Annual Hydrogen Mass Output (kg): {annual_h2_mass_output_formatted[-1]}")
-        st.write(f"Annual Transport Cost (dollars): {annual_transport_cost_formatted[-1]}")
-        st.write(f"Initial Investment (dollars): {initial_investment_formatted[-1]}")
-        st.write(f"Revenue in {years[-1]} years (dollars): {revenue_formatted[-1]}")
-        st.write(f"Operational Cost in {years[-1]} years (dollars): {operational_cost_formatted[-1]}")
-        st.write(f"Profit in {years[-1]} years (dollars): {profit_formatted[-1]}")
 
         # Create and display the profit vs. years graph
         profits = [result['profit'] for result in results]
