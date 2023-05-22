@@ -3,6 +3,10 @@ import streamlit as st
 if 'card_counter' not in st.session_state:
     st.session_state['card_counter'] = 0
 
+# Add logo to the sidebar
+logo_path = "projeto/img/logo2.png"
+st.sidebar.image(logo_path, width=280)
+
 
 st.title("Hydro Capital")
 def format_number(number):

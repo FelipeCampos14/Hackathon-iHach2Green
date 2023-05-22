@@ -1,6 +1,9 @@
 import streamlit as st
 st.title("Hydro Capital")
 st.header("Compre H2V")
+# Add logo to the sidebar
+logo_path = "projeto/img/logo2.png"
+st.sidebar.image(logo_path, width=280)
 st.markdown(
     """
     <style>
