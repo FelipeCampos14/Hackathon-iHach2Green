@@ -15,25 +15,25 @@ st.header("Team")
 
 # Team member 1
 st.subheader("Celine de Souza")
-Celine = "projeto/img/Celine.png"
+Celine = "projeto/img/Celine.jpeg"
 st.image(Celine, width=200)
 st.write("John Doe is a seasoned energy analyst with a deep understanding of the green hydrogen market. With his expertise in financial modeling and market research, John brings valuable insights to our team.")
 
 # Team member 2
 st.subheader("Felipe Campos")
-Felipe = "projeto/img/Felipe.png"
+Felipe = "projeto/img/Felipe.jpeg"
 st.image(Felipe, width=200)
 st.write("Jane Smith is an experienced renewable energy engineer with a passion for sustainable technologies. Her technical expertise and project management skills make her an invaluable asset to our team.")
 
 # Team member 3
 st.subheader("Vinicius ")
-Vinicius = "projeto/img/Vinicius.png"
+Vinicius = "projeto/img/Vinicius.jpeg"
 st.image(Vinicius, width=200)
 st.write("Michael Johnson is a financial analyst with a strong background in investment strategies. His knowledge of the green energy sector and financial markets adds a unique perspective to our team.")
 
 # Team member 4
 st.subheader("Emily Wilson")
-Vivian = "projeto/img/Vivian.png"
+Vivian = "projeto/img/Vivian.jpeg"
 st.image(Vivian, width=200)
 st.write("Emily Wilson is a communications specialist with expertise in content creation and marketing. Her skills in storytelling and branding help us effectively convey our message to a wide audience.")
 
