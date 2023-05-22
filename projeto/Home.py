@@ -7,7 +7,7 @@ logo = "projeto/img/logo.png"
 st.image(logo, width=200)
 
 # Description section
-st.header("Description")
+st.header("Descrição")
 st.write("Bem-vindo à Hydro Capital! Somos uma equipe de profissionais dedicados ao avanço da energia sustentável, especialmente no campo do hidrogênio verde. Nossa missão é fornecer informações valiosas, análises e orientações financeiras para investimentos em projetos de hidrogênio verde. Seja você um investidor individual, uma empresa ou uma instituição financeira, a Hydro Capital é sua fonte de referência para compreender o potencial e a lucratividade das empreitadas de hidrogênio verde.")
 
 # Team section
@@ -17,25 +17,25 @@ st.header("Team")
 st.subheader("Celine de Souza")
 Celine = "projeto/img/Celine.jpeg"
 st.image(Celine, width=200)
-st.write("John Doe is a seasoned energy analyst with a deep understanding of the green hydrogen market. With his expertise in financial modeling and market research, John brings valuable insights to our team.")
+st.write("Responsável por UX e design, o modelo de negócios, a roterização do pitch, a locutora e criação do vídeo")
 
 # Team member 2
 st.subheader("Felipe Campos")
 Felipe = "projeto/img/Felipe.jpeg"
 st.image(Felipe, width=200)
-st.write("Jane Smith is an experienced renewable energy engineer with a passion for sustainable technologies. Her technical expertise and project management skills make her an invaluable asset to our team.")
+st.write("Responsável por Desenvolvimento Web e implementação de aplicação em python")
 
 # Team member 3
 st.subheader("Vinicius ")
 Vinicius = "projeto/img/Vinicius.jpeg"
 st.image(Vinicius, width=200)
-st.write("Michael Johnson is a financial analyst with a strong background in investment strategies. His knowledge of the green energy sector and financial markets adds a unique perspective to our team.")
+st.write("Responsável pelo Benchmark e desenvolvimento do algoritmo preditivo")
 
 # Team member 4
-st.subheader("Emily Wilson")
+st.subheader("Vivian Shibata")
 Vivian = "projeto/img/Vivian.jpeg"
 st.image(Vivian, width=200)
-st.write("Emily Wilson is a communications specialist with expertise in content creation and marketing. Her skills in storytelling and branding help us effectively convey our message to a wide audience.")
+st.write("Responsável por UX e design, o modelo de negócios, a roterização do pitch e da apresentação.")
 
 st.markdown(
     """
