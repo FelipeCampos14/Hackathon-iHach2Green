@@ -123,6 +123,10 @@ st.markdown(
             background-color: white;
             color: black;
         }
+        .st-c0{
+            background-color: white;
+            color: black;
+        }
         .css-76z9jo{
             background-color: white;
             color: black;
