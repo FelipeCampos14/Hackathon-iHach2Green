@@ -6,12 +6,6 @@ st.title("Hydro Capital")
 logo = "projeto/img/logo2.png"
 st.image(logo)
 
-# Add a title to the sidebar
-st.sidebar.title("Hydro Capital")
-
-# Add logo to the sidebar
-logo_path = "path_to_logo_image.png"
-st.sidebar.image(logo_path, width=200, caption="Logo")
 
 # Description section
 st.header("Descrição")
