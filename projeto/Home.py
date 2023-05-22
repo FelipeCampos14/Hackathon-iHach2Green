@@ -3,8 +3,8 @@ from PIL import Image
 
 st.title("Hydro Capital")
 # Logo
-image = Image.open('Hackathon-iHach2Green\projeto\img')
-st.image(image, width=200)
+image_path = "projeto/img/logo.png"
+st.image(image_path, caption="Image caption")
 
 # # Description section
 # st.header("Description")
