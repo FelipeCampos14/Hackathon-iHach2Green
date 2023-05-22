@@ -3,7 +3,7 @@ from PIL import Image
 
 st.title("Hydro Capital")
 # Logo
-image = Image.open('Hackathon-iHach2Green/projeto/img')
+image = Image.open('Hackathon-iHach2Green\projeto\img')
 st.image(image, width=200)
 
 # # Description section
