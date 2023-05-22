@@ -6,9 +6,6 @@ st.title("Hydro Capital")
 logo = "projeto/img/logo2.png"
 st.image(logo)
 
-# Add a title to the sidebar
-st.sidebar.title("Hydro Capital")
-
 # Add logo to the sidebar
 logo_path = "projeto/img/logo2.png"
 st.sidebar.image(logo_path, width=200)
@@ -149,6 +146,10 @@ st.markdown(
             -webkit-backdrop-filter: blur(5px);
             border: 1px solid rgba(255, 255, 255, 0.3);
             color: black;
+            padding: 50px;
+        }
+        .css-1v0mbdj{
+            align-self: flex-end;
         }
     </style>
     """,
