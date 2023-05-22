@@ -6,6 +6,13 @@ st.title("Hydro Capital")
 logo = "projeto/img/logo2.png"
 st.image(logo)
 
+# Add a title to the sidebar
+st.sidebar.title("Hydro Capital")
+
+# Add logo to the sidebar
+logo_path = "path_to_logo_image.png"
+st.sidebar.image(logo_path, width=200, caption="Logo")
+
 # Description section
 st.header("Descrição")
 st.write("Bem-vindo à Hydro Capital! Somos uma equipe de profissionais dedicados ao avanço da energia sustentável, especialmente no campo do hidrogênio verde. Nossa missão é fornecer informações valiosas, análises e orientações financeiras para investimentos em projetos de hidrogênio verde. Seja você um investidor individual, uma empresa ou uma instituição financeira, a Hydro Capital é sua fonte de referência para compreender o potencial e a lucratividade das empreitadas de hidrogênio verde.")
