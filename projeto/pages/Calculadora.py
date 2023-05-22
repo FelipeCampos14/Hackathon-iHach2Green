@@ -1,7 +1,5 @@
 import streamlit as st
-import scipy.integrate as spi
-with open('style.css') as f:
-    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
 if 'card_counter' not in st.session_state:
     st.session_state['card_counter'] = 0
 
@@ -136,6 +134,93 @@ st.markdown(
         .step-up {
             background-color: white;
             color: white;
+        }
+        .marketplace-container {
+            background-color: #d5ffd3;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            color: white;
+            margin-bottom: 1rem;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .marketplace-container h3 {
+            font-size: 25px;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        .marketplace-container p {
+            font-size: 15px;
+            line-height: 0.9;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: black;
+        }
+        .marketplace-container button {
+            border-radius: 0.5rem;
+            border: 1px;
+            color: white;
+            background-color: #032305;
+            margin: 1px;
+            align-self: flex-end;
+        }
+        .marketplace-container button:hover {
+            background-color: white;
+            color: #032305;
+            border: 1px solid #032305;
+        }
+        /* body*/
+        .css-uf99v8{
+            background: #fefdf4;
+        }
+        /* sidebar*/
+        .css-1cypcdb{
+            background-color:#032305;
+        }
+        /* Title n headers*/
+        .css-10trblm{
+            color: black;
+        }
+        /* body text*/
+        .css-q8sbsg {
+            color: black;
+            font-size: 40px;
+        }
+        /* info*/
+        .st-ae {
+            background-color: #d5ffd3;
+        }
+        /* info text*/
+        .css-nahz7x{
+            color: black;
+        }
+        /* button*/
+        .css-b3z5c9{
+            color:white;
+            background-color: #032305;
+            border: #032305;
+        }
+        .css-b3z5c9:focus:not(:active){
+            color:#032305;
+            background-color: white;
+            border:#032305;
+        }
+        .css-b3z5c9:hover{
+            color:#032305;
+            background-color: white;
+            border:#032305;
+        }
+        .css-1y4p8pa{
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: black;
         }
     </style>
     """,
