@@ -8,7 +8,7 @@ st.image(logo)
 
 # Add logo to the sidebar
 logo_path = "projeto/img/logo2.png"
-st.sidebar.image(logo_path, width=300)
+st.sidebar.image(logo_path, width=28    0)
 
 # Description section
 st.header("Descrição")
