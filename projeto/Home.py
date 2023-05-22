@@ -151,6 +151,9 @@ st.markdown(
         .css-1v0mbdj{
             align-self: flex-end;
         }
+        .css-e3xfei{
+            align-self: flex-end;
+        }
     </style>
     """,
     unsafe_allow_html=True
