@@ -3,7 +3,7 @@ from PIL import Image
 
 st.title("Hydro Capital")
 # Logo
-logo = "projeto/img/logo.png"
+logo = "projeto/img/logo2.png"
 st.image(logo, width=200)
 
 # Description section
