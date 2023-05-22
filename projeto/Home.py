@@ -146,7 +146,7 @@ st.markdown(
             -webkit-backdrop-filter: blur(5px);
             border: 1px solid rgba(255, 255, 255, 0.3);
             color: black;
-            padding: 150px;
+            padding: 130px;
         }
         .css-1v0mbdj{
             align-self: flex-end;
