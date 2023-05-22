@@ -10,10 +10,10 @@ st.markdown(
     <style>
         /* Add your CSS styles specific to the Marketplace page */
         .marketplace-container {
-            background-color: black;
+            background-color: #d5ffd3;
             padding: 1rem;
             border-radius: 0.5rem;
-            color: white;
+            color: black;
             margin-bottom: 1rem;
             max-width: 2 rem;
         }

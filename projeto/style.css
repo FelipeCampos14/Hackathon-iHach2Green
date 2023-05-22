@@ -1,17 +1,51 @@
 /* body*/
 .css-uf99v8{
-    background: linear-gradient(to bottom,#104F55, #01200F, #32745D);
+    background: #fefdf4;
 }
 /* sidebar*/
 .css-1cypcdb{
-    background-color:#011502;
+    background-color:#032305;
+}
+/* Title n headers*/
+.css-10trblm{
+    color: black;
+}
+/* body text*/
+.css-q8sbsg {
+    color: black;
+    font-size: 40px;
+}
+/* info*/
+.st-ae {
+    background-color: #d5ffd3;
+}
+/* info text*/
+.css-nahz7x{
+    color: black;
+}
+/* button*/
+.css-b3z5c9{
+    color:white;
+    background-color: #032305;
+    border: #032305;
+}
+.css-b3z5c9:focus:not(:active){
+    color:#032305;
+    background-color: white;
+    border:#032305;
+}
+.css-b3z5c9:hover{
+    color:#032305;
+    background-color: white;
+    border:#032305;
 }
 .css-1y4p8pa{
     /* From https://css.glass */
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: black;
 }

@@ -61,8 +61,8 @@ electrolyzer_power = st.number_input("Potência do Eletrolizador (Watts)", value
 initial_cost_solar = st.number_input("Custo inicial usina energia sustentável (dólares)", value=200000000)
 annual_cost_solar = st.number_input("Custo operacional usina energia sustentável (dólares por ano)", value=2000000)
 initial_cost_electrolyzer = st.number_input("Custo inicial eletrolizador (dólares)", value=100000000)
-annual_cost_electrolyzer = st.number_input(" (dollars)", value=1000000)
-electrolyzer_efficiency = st.number_input("Custo operacional eletrolizador (dólares por ano)", value=0.7)
+annual_cost_electrolyzer = st.number_input("Custo operacional eletrolizador (dólares por ano)", value=1000000)
+electrolyzer_efficiency = st.number_input("Eficiência do eletrolisador()", value=0.7)
 max_years = st.number_input("Número de anos", value=10)
 name = st.text_input("Nome do projeto")
 
@@ -94,6 +94,7 @@ if st.button("Calcular"):
         # Create and display the profit vs. years graph
         profits = [result['profit'] for result in results if result['year'] > 0]
         st.line_chart(profits)
+        st.caption("Investment over time")
 
     else: 
         st.warning("Preencha todos os campos")
@@ -115,3 +116,28 @@ if st.button("Adicionar a Investimento"):
         st.success('Enviado para Investimento', icon="✅")
     else: 
         st.warning("Preencha todos os campos")
+
+st.markdown(
+    """
+    <style>
+        /* Add your CSS styles specific to the Marketplace page */
+        .st-bc{
+            background-color: white;
+            color: black;
+        }
+        .css-76z9jo{
+            background-color: white;
+            color: black;
+        }
+        .step-down {
+            background-color: white;
+            color: white;
+        }
+        .step-up {
+            background-color: white;
+            color: white;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)

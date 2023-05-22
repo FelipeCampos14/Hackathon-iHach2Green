@@ -8,7 +8,7 @@ st.markdown(
     <style>
         /* Add your CSS styles specific to the Marketplace page */
         .marketplace-container {
-            background-color: black;
+            background-color: #d5ffd3;
             padding: 1rem;
             border-radius: 0.5rem;
             color: white;
@@ -28,18 +28,20 @@ st.markdown(
             line-height: 0.9;
             margin-top: 0;
             margin-bottom: 0.5rem;
+            color: black;
         }
         .marketplace-container button {
             border-radius: 0.5rem;
-            border: 1px solid white;
+            border: 1px;
             color: white;
-            background-color: black;
+            background-color: #032305;
             margin: 1px;
             align-self: flex-end;
         }
         .marketplace-container button:hover {
             background-color: white;
-            color: black;
+            color: #032305;
+            border: 1px solid #032305;
         }
     </style>
     """,
